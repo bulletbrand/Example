@@ -1,0 +1,173 @@
+.about {
+  padding-top: 14px;
+
+  &_inner {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding-left: 86px;
+  }
+
+  &_info h3 {
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 45px;
+    margin-bottom: 3px;
+  }
+
+  &_info p {
+    padding-left: 44px;
+    color: #808080;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  &_info-describe {
+    color: #808080;
+    font-size: 12px;
+    padding: 10px 14px 11px 44px;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  &_info-describe span {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &_info-describe {
+    background: #FFFBC8;
+    border: 1px solid #DADADA;
+  }
+
+  &_logo {
+    position: absolute;
+    left: 0px;
+    top: -5px;
+
+    img {
+      border-radius: 50%;
+      width: 124px;
+      height: 124px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding-top: 18px;
+
+    &_info-describe {
+      padding: 7px 10px 6px 28px;
+    }
+
+    &_logo img {
+      border-radius: 50%;
+      width: 107px;
+      height: 101px;
+      cursor: pointer;
+    }
+
+    &_info-describe span {
+      font-size: 11px;
+    }
+
+    &_info h3 {
+      font-size: 13px;
+      padding-left: 30px;
+      margin-bottom: 0px;
+    }
+
+    &_info p {
+      padding-left: 30px;
+      font-size: 9px;
+      margin-bottom: 3px;
+    }
+
+    &_logo {
+      left: 0px;
+      top: -10px;
+    }
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  .about {
+    padding-top: 16px;
+
+    &_inner {
+      padding-left: 80px;
+    }
+
+    &_info-describe {
+      padding: 6px 8px 5px 28px;
+    }
+
+    &_logo img {
+      width: 100px;
+      height: 95px;
+    }
+
+    &_info-describe span {
+      font-size: 9px;
+    }
+
+    &_info h3 {
+      font-size: 13px;
+      padding-left: 26px;
+      margin-bottom: 0px;
+    }
+
+    &_info p {
+      padding-left: 26px;
+      font-size: 7px;
+      margin-bottom: 2px;
+    }
+
+    &_logo {
+      left: 0px;
+      top: -10px;
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+  .about {
+    padding-top: 16px;
+
+    &_inner {
+      padding-left: 56px;
+    }
+
+    &_info-describe {
+      padding: 1px 8px 1px 29px;
+    }
+
+    &_logo img {
+      width: 75px;
+      height: 70px;
+    }
+
+    &_info-describe span {
+      font-size: 7px;
+    }
+
+    &_info h3 {
+      font-size: 13px;
+      padding-left: 26px;
+      margin-bottom: 0;
+    }
+
+    &_logo {
+      left: 0;
+      top: 3px;
+    }
+  }
+}
+
+

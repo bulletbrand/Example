@@ -1,0 +1,96 @@
+.progressBar {
+  padding-top: 15px;
+  padding-bottom: 21px;
+
+  &_inner {
+    padding-left: 131px;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 13px;
+    padding-bottom: 7px;
+
+    span {
+      margin-right: 38px;
+      color: #333333;
+      font-size: 13px;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 7px 40px 0px 0px;
+    border-top: 1px solid #DADADA;
+
+    span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.green {
+  border-left: 2px solid rgba(51, 51, 51, 0.2);
+}
+
+.blue {
+  border-left: 2px solid #abcdef;
+}
+
+
+@media (max-width: 600px) {
+
+  .progressBar {
+    padding-top: 13px;
+    padding-bottom: 17px;
+
+    &_inner {
+      padding-left: 118px;
+    }
+
+    &_header span {
+      font-size: 12px;
+    }
+
+    &_footer span {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .progressBar {
+    padding-top: 11px;
+    padding-bottom: 14px;
+
+    &_inner {
+      padding-left: 102px;
+    }
+
+    &_header span {
+      font-size: 10px;
+    }
+
+    &_footer span {
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .progressBar {
+    padding-top: 9px;
+    padding-bottom: 10px;
+
+    &_inner {
+      padding-left: 80px;
+    }
+
+  }
+}

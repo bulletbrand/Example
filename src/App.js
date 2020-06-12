@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import About from './About/About';
+import Progressbar from './Progressbar/Progressbar';
+import Comments from './Comments/Comments';
+import CommentsForm from './CommentsForm/CommentsForm';
+import { createDate } from './utils/utils';
+import { initialComments } from './Progressbar/mock';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './index.scss';
+
+class App extends React.Component {
+  state = {
+    data: initialComments,
+  };
+
+  handleComment = (comment) => {
+    this.setState({
+      data: [
+        ...this.state.data,
+        { comment, author: 'User', date: createDate() },
+      ],
+    });
+  };
+
+  render() {
+    return (
+      <div className="wrapper">
+        <div className="container">
+          <About />
+          <Progressbar />
+          <Comments data={this.state.data} />
+        </div>
+        <CommentsForm handleClick={this.handleComment} />
+      </div>
+    );
+  }
 }
 
 export default App;

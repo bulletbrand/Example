@@ -1,0 +1,65 @@
+.progress {
+  position: relative;
+  height: 28px;
+  background: white;
+  margin-bottom: 5px;
+
+  &_show {
+    background: #B1E19B;
+    width: 40px;
+    height: 100%;
+    border-radius: 0px 3px 3px 0px;
+  }
+
+  span {
+    top: 50%;
+    margin-top: -0.125em;
+    position: absolute;
+    padding-left: 6px;
+    font-size: 13px;
+  }
+
+  &_count {
+    position: absolute;
+    right: 46px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+}
+
+.green {
+  border-left: 2px solid rgba(51, 51, 51, 0.2);
+}
+
+.blue {
+  border-left: 2px solid #abcdef;
+}
+
+
+@media (max-width: 600px) {
+
+  .progress span {
+    padding-left: 4px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress span {
+    padding-left: 3px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .progress span {
+    padding-left: 2px;
+    font-size: 8px;
+  }
+
+  .progress {
+    height: 16px;
+  }
+
+}
